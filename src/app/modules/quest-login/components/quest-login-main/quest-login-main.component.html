@@ -1,3 +1,35 @@
-<p>
-  quest-login-main works!
-</p>
+<!-- <mat-grid-list cols="12" rowHeight="fit" style="height: calc(100vh - 24px)" >
+    <mat-grid-tile 
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list> -->
+
+<div class="login-container">
+  <div class="login-container-item left-panel">
+    <form class="login-form">
+      <div>
+        <mat-form-field>
+          <input matInput placeholder="User Name">
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+        </mat-form-field>
+      </div>
+      <div>
+        <button class="sign-in-button" mat-button>Sign In</button>
+      </div>
+      <div>
+        <button class="sign-up-button" mat-button (click)="openDialog()">Sign Up</button>
+      </div>
+    </form>
+  </div>
+  <div class="login-container-item right-panel">
+    <img src="assets/login-img.png" />
+  </div>
+</div>

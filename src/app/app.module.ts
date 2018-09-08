@@ -1,15 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { QuestLoginModule } from './modules';
+
+import {
+  QuestLoginModule,
+  MaterialModule,
+} from './modules';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    QuestLoginModule
+    QuestLoginModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

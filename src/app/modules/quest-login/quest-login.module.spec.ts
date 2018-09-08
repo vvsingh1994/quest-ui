@@ -1,5 +1,4 @@
 import { QuestLoginModule } from './quest-login.module';
-
 describe('QuestLoginModule', () => {
   let questLoginModule: QuestLoginModule;
 
