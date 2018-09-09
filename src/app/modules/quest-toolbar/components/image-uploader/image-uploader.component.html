@@ -1,0 +1,39 @@
+<!-- <div class="sign-up-form">
+    <h1 mat-dialog-title>Upload Image</h1>
+    <hr>
+    <div>
+      <div mat-dialog-content>
+        <div>
+          <mat-form-field>
+            <input matInput placeholder="User Name" type="text">
+          </mat-form-field>
+        </div>
+      <div mat-dialog-actions align="center">
+        <button mat-button (click)="onNoClick()">Cancel</button>
+        <button mat-button cdkFocusInitial class="create-account-button">Done</button>
+      </div>
+    </div>
+  </div> -->
+
+<div class="form-group">
+  <div class="image-preview">
+    <img src="{{url}}" *ngIf="url">
+  </div>
+  <div class="Add Captiion" *ngIf="url">
+    <mat-form-field>
+      <textarea matInput placeholder="Add Description"></textarea>
+    </mat-form-field>
+  </div>
+  <div class="file-choose-label" *ngIf="!url">
+    <label for="file">Choose Image</label>
+    <input type="file" id="file" accept="image/*" (change)="handleFileInput($event)" hidden>
+  </div>
+  <div>
+    <button mat-button (click)="uploadSelectedFile()" *ngIf="url">
+      Upload
+    </button>
+    <button mat-button (click)="onClose()" *ngIf="url">
+      Close
+    </button>
+  </div>
+</div>
