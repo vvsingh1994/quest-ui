@@ -1,0 +1,6 @@
+<div class="feed-card-container">
+  <div class="row" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onScroll()" [scrollWindow]="false"
+    style="height: 100%; overflow-y: scroll;">
+    <app-profile-card [cards]="loadedCards"></app-profile-card>
+  </div>
+</div>

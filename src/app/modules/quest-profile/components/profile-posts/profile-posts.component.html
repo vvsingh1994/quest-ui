@@ -1,0 +1,11 @@
+<mat-toolbar class="profile-post-container">
+  <span class="profile-post-flex-item">
+    <mat-icon (click)="makeFlagFalse()" [ngClass]="!gridFlag ? 'is-active' : 'not-active'">list</mat-icon>
+  </span>
+  <span class="profile-post-flex-item">
+    <mat-icon (click)="makeFlagTrue()" [ngClass]="gridFlag ? 'is-active': 'not-active'">grid_on</mat-icon>
+  </span>
+</mat-toolbar>
+
+<app-profile-list-view *ngIf="!gridFlag"></app-profile-list-view>
+<app-profile-grid-view *ngIf="gridFlag"></app-profile-grid-view>

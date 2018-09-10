@@ -9,7 +9,7 @@ import { UploaderService } from '../../../../services/uploader.service';
 })
 export class ImageUploaderComponent implements OnInit {
   fileToUpload: File = null;
-  url: string;
+  url: any;
   constructor(
     public dialogRef: MatDialogRef<ImageUploaderComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any, private uploaderService: UploaderService) { }

@@ -1,0 +1,21 @@
+
+
+.profile-post-container {
+    height: 6%;
+    .profile-post-flex-item {
+        flex:1;
+        text-align: center;
+        display: inline-flex;
+        vertical-align: middle;
+        justify-content: center;
+        mat-icon {
+            cursor: pointer;
+        }
+    }
+}
+
+.is-active {
+    color:#00AAE4;
+}
+.not-active {
+}

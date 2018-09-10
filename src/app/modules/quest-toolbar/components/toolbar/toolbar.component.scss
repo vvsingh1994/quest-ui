@@ -1,5 +1,12 @@
 .toolbar-flex-item {
     flex:1;
     text-align: center;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.cursor-enable {
     cursor: pointer;
 }
+
