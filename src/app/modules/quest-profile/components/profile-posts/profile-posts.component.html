@@ -1,2 +1,16 @@
-<!-- <app-profile-grid-view></app-profile-grid-view> -->
-<app-profile-list-view></app-profile-list-view>
+ <div class="profile-details">
+   *Profile Details*
+</div>
+ 
+<mat-toolbar style="height:40px">
+ <span class="toolbar-flex-item">
+    <mat-icon (click)="makeFlagFalse()" class="cursor" [ngClass]="!gridFlag ? 'is-active' : 'not-active'">list</mat-icon>
+  </span>
+  <span class="toolbar-flex-item">
+    <mat-icon (click)="makeFlagTrue()" class="cursor" [ngClass]="gridFlag ? 'is-active': 'not-active'">grid_on</mat-icon>
+  </span>
+</mat-toolbar>
+
+<app-profile-list-view *ngIf="!gridFlag"></app-profile-list-view>
+<app-profile-grid-view *ngIf="gridFlag"></app-profile-grid-view>
+

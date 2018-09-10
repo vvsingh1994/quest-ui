@@ -1,0 +1,23 @@
+.toolbar-flex-item {
+    flex:1;
+    text-align: center;
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+}
+.cursor{
+cursor: pointer;
+}
+.profile-details {
+    height: 20%;
+    text-align: center;
+    color:grey;
+    margin: auto;
+    vertical-align: middle;
+}
+.is-active {
+    color:#00AAE4;
+}
+.not-active {
+
+}

@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-posts.component.scss']
 })
 export class ProfilePostsComponent implements OnInit {
-
+  gridFlag: Boolean;
   constructor() { }
 
   ngOnInit() {
+    this.gridFlag = false;
+  }
+
+  makeFlagTrue() {
+    this.gridFlag = true;
+  }
+
+  makeFlagFalse() {
+    this.gridFlag = false;
   }
 
 }

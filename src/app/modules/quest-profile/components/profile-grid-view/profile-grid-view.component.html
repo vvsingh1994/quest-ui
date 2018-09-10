@@ -1,3 +1,8 @@
-<p>
-  profile-grid-view works!
-</p>
+<div class="grid-center" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onScroll()"
+  [scrollWindow]="false" style="height: 100%; overflow-y: scroll;">
+  <mat-grid-list cols="3" rowHeight="1:1" gutterSize="20px">
+    <mat-grid-tile class="mat-elevation-z4" *ngFor="let image of loadedImages">
+      <img src="assets/profile-img.png" alt="My pic" class="tile-image">
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
