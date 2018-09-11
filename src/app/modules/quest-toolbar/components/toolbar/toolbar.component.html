@@ -1,20 +1,21 @@
-<mat-toolbar color="primary" class="toolbar-content">
-  <div>
-    <span class="toolbar-flex-item">
-      <mat-icon class="cursor-enable">home</mat-icon>
+<mat-toolbar color="primary">
+  <div class="toolbar-content">
+    <div>
+      <span class="toolbar-flex-item">
+        <mat-icon class="cursor-enable">home</mat-icon>
+      </span>
+      |
+      <span class="cursor-enable toolbar-flex-item">QUEST</span>
+    </div>
+    <span (click)="openDialog()" class="toolbar-flex-item">
+      <mat-icon class="cursor-enable">add_a_photo</mat-icon>
     </span>
-    |
-    <span class="cursor-enable toolbar-flex-item">QUEST</span>
-  </div>
-
-  <span (click)="openDialog()" class="toolbar-flex-item">
-    <mat-icon class="cursor-enable">add_circle_outline</mat-icon>
-  </span>
-  <div>
-    <span class="toolbar-flex-item">
-      <mat-icon class="cursor-enable">perm_identity</mat-icon>
-    </span>
-    |
-    <span class="cursor-enable toolbar-flex-item">Logout</span>
+    <div>
+      <span class="toolbar-flex-item">
+        <mat-icon class="cursor-enable">perm_identity</mat-icon>
+      </span>
+      |
+      <span class="cursor-enable toolbar-flex-item">Logout</span>
+    </div>
   </div>
 </mat-toolbar>
